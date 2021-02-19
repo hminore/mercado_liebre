@@ -21,10 +21,13 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+    flex-direction: row;
 }
 
 header div.top-header p{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 15rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -35,7 +38,7 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width: 25rem;
 }
 
 header div.logo{
@@ -46,6 +49,7 @@ header .form{
     align-items: center;
     padding: 2px;
     font-size: 11px;
+    width: 15rem;
 }
 header nav{
     font-size: 12px;
@@ -74,6 +78,8 @@ header .form .submit{
     border: 1px solid #000;
     color: #666;
     width: 10%;
+    width: 1.2rem;
+    padding: 2px;
 }
 
 div.burger-menu{
@@ -203,6 +209,7 @@ main section article:hover .description{
 .footer i.fas{
     color:#0044AA;
     margin-top: 10px;
+    font-size: 2rem;
 }
 
 .footer-titulo{
@@ -210,8 +217,70 @@ main section article:hover .description{
 }
 .footer-detalle{
     text-align: center
-
 }
+
+.footer div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 25rem;
+    margin-top: 20px;
+}
+
+.footer div i.fas:hover {
+    color: rgb(0, 247, 255);
+}
+
+
+/* Register FORM */
+main.register div.form-name{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-top: 10px;
+}
+main.register div.form-name input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+div.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+    margin-top: 10px;
+}
+
+div.interests{
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    justify-content: space-between;
+}
+div.interests input{
+    margin-top: 15px;
+    
+}
+
+div.password input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px; 
+}
+/* Login form */
+main.login form input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px; 
+}
+
+
 /* MEDIA QUERIES */
 @media (min-width: 361px){
     main section div.products{
@@ -236,5 +305,32 @@ main section article:hover .description{
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
+        
     }
+    div.burger-menu i{
+        display:none;
+    }
+
+    nav .nav-left {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    }
+    nav .nav-right {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        }
+
+
+.main-nav{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.footer{
+    flex-direction: row;
+}
+
 }
